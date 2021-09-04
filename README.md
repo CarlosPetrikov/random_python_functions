@@ -1,2 +1,3 @@
-# random_python_functions
-Random functions that I made to use in my python scripts 
+# Random Python Functions 🐍
+
+Random functions that helped me many times to avoid reworking in my scripts :D 
