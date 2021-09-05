@@ -8,7 +8,7 @@ def zabbix(zabbix_host, key, message):
     os.system(f'C:\zabbix_sender.exe -z {zabbix_server} -s {zabbix_host} -k {key} -o "{message}"')  
 
 # Function to query the database and, in case of errors, report to zabbix 
-def sql(bd, query, type_result = 0, zabbix_hostname = None, zabbix_key):
+def sql(bd, query, type_result = 0, zabbix_hostname = None, zabbix_key = None):
     zabbix_host, key = zabbix_hostname, zabbix_key
     try:
         # Here you must enter the name of your ODBC Driver
